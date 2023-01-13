@@ -1,10 +1,22 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Dilip",
-            "email": "dkmrya02@gmail",
-            "password": "Admin@123  "
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Dilip",
+      "email": "dkmrya02@gmail",
+      "password": "Admin@123  "
+    },
+    {
+      "email": "curiousdilip@gmail.com",
+      "name": "asdasd",
+      "password": "asdasd",
+      "id": 2
+    },
+    {
+      "email": "vishal168@gmail.com",
+      "name": "Vishal",
+      "password": "12234qwerty",
+      "id": 3
+    }
+  ]
 }
