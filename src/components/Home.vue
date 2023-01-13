@@ -1,10 +1,8 @@
 <template>
-    <div>
-        <h1>Hello, Welcome Onboard</h1>
-    </div>
+    <h1>Hello, Welcome Onboard</h1>
 </template>
 <script>
-export default {
-    name: 'Home'
-}
+export default {/* eslint-disable */
+    name: "HomePage"
+};
 </script>
