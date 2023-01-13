@@ -1,11 +1,13 @@
 <template>
-    <img class="logo" src="../assets/logo.svg" />
-    <h1> Sign Up</h1>
-    <div class="register">
-        <input type="text" v-model="name" placeholder="Enter Name">
-        <input type="email" v-model="email" placeholder="Enter Email">
-        <input type="password" v-model="password" placeholder="Enter Password">
-        <button v-on:click="signUp">Sign Up</button>
+    <div class="signup">
+        <img class="logo" src="../assets/logo.svg" />
+        <h1> Sign Up</h1>
+        <div class="register">
+            <input type="text" v-model="name" placeholder="Enter Name">
+            <input type="email" v-model="email" placeholder="Enter Email">
+            <input type="password" v-model="password" placeholder="Enter Password">
+            <button v-on:click="signUp">Sign Up</button>
+        </div>
     </div>
 </template>
 
@@ -36,6 +38,14 @@ export default {
 </script>
 
 <style>
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
 .logo {
     width: 100px;
 }
