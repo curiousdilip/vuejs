@@ -17,6 +17,30 @@
       "name": "Vishal",
       "password": "12234qwerty",
       "id": 3
+    },
+    {
+      "email": "2d@gma.com",
+      "name": "Dilip",
+      "password": "1234567",
+      "id": 4
+    },
+    {
+      "email": "1@gmail.com",
+      "name": "hel;lo",
+      "password": "23345345345",
+      "id": 5
+    },
+    {
+      "email": "dasdasdasda",
+      "name": "asdasdas",
+      "password": "123123123123",
+      "id": 6
+    },
+    {
+      "email": "pankaj@gmail.com",
+      "name": "Pankaj",
+      "password": "12345678",
+      "id": 7
     }
   ]
 }

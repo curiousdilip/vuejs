@@ -29,9 +29,16 @@ export default {
             });
             console.warn(result)
             if (result.status == 201) {
-                alert("sign up Done")
+                localStorage.setItem("user-info", JSON.stringify(result.data))
+                this.$router.push({ name: 'Home' })
             }
-            localStorage.setItem("user-info", JSON.stringify(result.data))
+
+        }
+    },
+    mounted() {
+        let user = localStorage.getItem('user-info');
+        if (user) {
+            this.$router.push({ name: 'Home' })
         }
     }
 }
@@ -43,7 +50,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: 95vh;
 }
 
 .logo {
