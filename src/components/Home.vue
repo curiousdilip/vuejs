@@ -1,19 +1,24 @@
 <template>
-    <h1>Hello, Welcome Onboard</h1>
+  <Header />
+  <h1>Hello, Welcome Onboard</h1>
 </template>
 <script>
-export default {/* eslint-disable */
-    name: "Home",
-    mounted() {
-        let user = localStorage.getItem('user-info');
-        if (!user) {
-            this.$router.push({ name: 'SignUp' })
-        }
+import Header from "./Header.vue";
+export default {
+  /* eslint-disable */ name: "Home",
+  components: {
+    Header,
+  },
+  mounted() {
+    let user = localStorage.getItem("user-info");
+    if (!user) {
+      this.$router.push({ name: "SignUp" });
     }
+  },
 };
 </script>
 <style>
 h1 {
-    text-align: center;
+  text-align: center;
 }
 </style>
