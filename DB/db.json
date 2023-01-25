@@ -41,6 +41,12 @@
       "name": "Pankaj",
       "password": "12345678",
       "id": 7
+    },
+    {
+      "email": "dkmrya02@gmail.com",
+      "name": "Dilip Kumar Maurya",
+      "password": "1Dilip@23",
+      "id": 8
     }
   ]
 }
