@@ -54,5 +54,13 @@
       "password": "12345678",
       "id": 9
     }
+  ],
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Burger King",
+      "contact": 2384859382,
+      "address": "Noida sector 50"
+    }
   ]
 }
