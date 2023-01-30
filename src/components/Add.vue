@@ -6,19 +6,19 @@
       type="text "
       name="name"
       placeholder="Enter Name"
-      v-model="Restaurant.name"
+      v-model="restaurant.name"
     />
     <input
       type="text "
       name="address"
       placeholder="Enter Address"
-      v-model="Restaurant.address"
+      v-model="restaurant.address"
     />
     <input
       type="text "
       name="contact"
       placeholder="Enter Contact"
-      v-model="Restaurant.contact"
+      v-model="restaurant.contact"
     />
     <button type="button" v-on:click="addRestaurant">Add New Restaurant</button>
   </form>
@@ -33,7 +33,7 @@ export default {
   },
   data() {
     return {
-      Restaurant: {
+      restaurant: {
         name: "",
         address: "",
         contact: "",
@@ -41,8 +41,15 @@ export default {
     };
   },
   methods: {
-    addRestaurant() {
-      console.warn(this.Restaurant);
+    async addRestaurant() {
+      const result = await axios.post("http://localhost:3000/restaurants", {
+        name: this.restaurant.name,
+        address: this.restaurant.address,
+        contact: this.restaurant.contact,
+      });
+      if (result.status == 201) {
+        this.$router.push({ name: "Home" });
+      }
     },
   },
   mounted() {

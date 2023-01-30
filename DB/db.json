@@ -67,6 +67,24 @@
       "name": "Burger King",
       "contact": 2384859382,
       "address": "Noida sector 50"
+    },
+    {
+      "name": "Dilip ka dhaaba",
+      "address": "qutub vihar",
+      "contact": "8978987666",
+      "id": 2
+    },
+    {
+      "name": "Dilip ka dhaaba",
+      "address": "qutub vihar",
+      "contact": "8978987666",
+      "id": 3
+    },
+    {
+      "name": "ree-sky",
+      "address": "bikaner, rajasthan",
+      "contact": "777636463434",
+      "id": 4
     }
   ]
 }
