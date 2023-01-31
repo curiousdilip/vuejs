@@ -18,4 +18,12 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  margin-bottom: 30px;
+}
+table {
+  border-spacing: 0;
+  margin: 0 auto;
+}
 </style>

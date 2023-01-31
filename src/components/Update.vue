@@ -27,6 +27,7 @@
 </template>
 <script>
 import Header from "./Header.vue";
+import axios from "axios";
 export default {
   /* eslint-disable */ name: "Update",
   components: {
@@ -41,11 +42,17 @@ export default {
       },
     };
   },
-  mounted() {
+  async mounted() {
     let user = localStorage.getItem("user-info");
     if (!user) {
       this.$router.push({ name: "SignUp" });
     }
+    const result = await axios.get(
+      "http://localhost:3000/restaurants/" + this.$route.params.id
+    );
+    console.warn(result);
+    // console.warn(this.$route.params.id);
+    this.restaurant = result.data;
   },
 };
 </script>
