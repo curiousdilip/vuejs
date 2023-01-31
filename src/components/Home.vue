@@ -15,7 +15,7 @@
       <td>{{ item.contact }}</td>
       <td>{{ item.address }}</td>
       <td>
-        <router-link to="'/update-restaurant/'+item.id">Update</router-link>
+        <router-link :to="'/update-restaurant/' + item.id">Update</router-link>
       </td>
     </tr>
   </table>
