@@ -20,7 +20,7 @@
       placeholder="Enter Contact"
       v-model="restaurant.contact"
     />
-    <button type="button" v-on:click="addRestaurant">
+    <button type="button" v-on:click="updateRestaurant">
       Update New Restaurant
     </button>
   </form>
@@ -42,6 +42,22 @@ export default {
       },
     };
   },
+  methods: {
+    async updateRestaurant() {
+      console.warn(this.restaurant);
+      const result = await axios.put(
+        "http://localhost:3000/restaurants/" + this.$route.params.id,
+        {
+          name: this.restaurant.name,
+          address: this.restaurant.address,
+          contact: this.restaurant.contact,
+        }
+      );
+      if (result.status == 200) {
+        this.$router.push({ name: "Home" });
+      }
+    },
+  },
   async mounted() {
     let user = localStorage.getItem("user-info");
     if (!user) {
@@ -50,8 +66,6 @@ export default {
     const result = await axios.get(
       "http://localhost:3000/restaurants/" + this.$route.params.id
     );
-    console.warn(result);
-    // console.warn(this.$route.params.id);
     this.restaurant = result.data;
   },
 };

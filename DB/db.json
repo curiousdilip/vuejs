@@ -75,7 +75,7 @@
       "id": 2
     },
     {
-      "name": "Dilip ka dhaaba",
+      "name": "Dilip ka thela",
       "address": "qutub vihar",
       "contact": "8978987666",
       "id": 3
@@ -85,6 +85,12 @@
       "address": "bikaner, rajasthan",
       "contact": "777636463434",
       "id": 4
+    },
+    {
+      "name": "REE",
+      "address": "Noida sector 502asd",
+      "contact": "asdasd",
+      "id": 5
     }
   ]
 }
